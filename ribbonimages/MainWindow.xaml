@@ -1,0 +1,21 @@
+﻿<r:RibbonWindow x:Class="ribbonimages.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:r="urn:fluent-ribbon"
+        Title="Test View Images in Ribbon Constructor" Height="350" Width="525">
+    <Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition></RowDefinition>
+		</Grid.RowDefinitions>
+		<r:Ribbon>
+			<r:RibbonTabItem Header="Закладочка">
+				<r:RibbonGroupBox Header="Группочка">
+					<r:Button Header="Новый" LargeIcon="\Images\New.png"></r:Button>
+					<r:Button Header="Открыть" LargeIcon="\Images\Open.png"></r:Button>
+					<r:Button Header="Сохранить" LargeIcon="\Images\Save.png"></r:Button>
+				</r:RibbonGroupBox>
+			</r:RibbonTabItem>
+		</r:Ribbon>
+    </Grid>
+</r:RibbonWindow>
